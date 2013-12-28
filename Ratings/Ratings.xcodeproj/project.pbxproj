@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C027973186DC5CB00B2FCA5 /* JHPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C027972186DC5CB00B2FCA5 /* JHPlayersViewController.m */; };
+		4C027976186DC66700B2FCA5 /* JHPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C027975186DC66700B2FCA5 /* JHPlayer.m */; };
+		4C027979186E5C6500B2FCA5 /* JHPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C027978186E5C6500B2FCA5 /* JHPlayerCell.m */; };
+		4C02797C186E785E00B2FCA5 /* JHPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C02797B186E785E00B2FCA5 /* JHPlayerDetailViewController.m */; };
 		4C2D50E3186C3FE100E54244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2D50E2186C3FE100E54244 /* Foundation.framework */; };
 		4C2D50E5186C3FE100E54244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2D50E4186C3FE100E54244 /* CoreGraphics.framework */; };
 		4C2D50E7186C3FE100E54244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2D50E6186C3FE100E54244 /* UIKit.framework */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C027971186DC5CB00B2FCA5 /* JHPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHPlayersViewController.h; path = Ratings/JHPlayersViewController.h; sourceTree = "<group>"; };
+		4C027972186DC5CB00B2FCA5 /* JHPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHPlayersViewController.m; path = Ratings/JHPlayersViewController.m; sourceTree = "<group>"; };
+		4C027974186DC66700B2FCA5 /* JHPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHPlayer.h; path = Ratings/JHPlayer.h; sourceTree = "<group>"; };
+		4C027975186DC66700B2FCA5 /* JHPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHPlayer.m; path = Ratings/JHPlayer.m; sourceTree = "<group>"; };
+		4C027977186E5C6500B2FCA5 /* JHPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPlayerCell.h; sourceTree = "<group>"; };
+		4C027978186E5C6500B2FCA5 /* JHPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPlayerCell.m; sourceTree = "<group>"; };
+		4C02797A186E785E00B2FCA5 /* JHPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHPlayerDetailViewController.h; path = Ratings/JHPlayerDetailViewController.h; sourceTree = "<group>"; };
+		4C02797B186E785E00B2FCA5 /* JHPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHPlayerDetailViewController.m; path = Ratings/JHPlayerDetailViewController.m; sourceTree = "<group>"; };
 		4C2D50DF186C3FE100E54244 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2D50E2186C3FE100E54244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C2D50E4186C3FE100E54244 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +94,12 @@
 		4C2D50D6186C3FE100E54244 = {
 			isa = PBXGroup;
 			children = (
+				4C02797A186E785E00B2FCA5 /* JHPlayerDetailViewController.h */,
+				4C02797B186E785E00B2FCA5 /* JHPlayerDetailViewController.m */,
+				4C027974186DC66700B2FCA5 /* JHPlayer.h */,
+				4C027975186DC66700B2FCA5 /* JHPlayer.m */,
+				4C027971186DC5CB00B2FCA5 /* JHPlayersViewController.h */,
+				4C027972186DC5CB00B2FCA5 /* JHPlayersViewController.m */,
 				4C2D50E8186C3FE100E54244 /* Ratings */,
 				4C2D5107186C3FE100E54244 /* RatingsTests */,
 				4C2D50E1186C3FE100E54244 /* Frameworks */,
@@ -115,6 +133,8 @@
 				4C2D50F1186C3FE100E54244 /* JHAppDelegate.h */,
 				4C2D50F2186C3FE100E54244 /* JHAppDelegate.m */,
 				4C2D50F4186C3FE100E54244 /* Main.storyboard */,
+				4C027977186E5C6500B2FCA5 /* JHPlayerCell.h */,
+				4C027978186E5C6500B2FCA5 /* JHPlayerCell.m */,
 				4C2D50F7186C3FE100E54244 /* JHViewController.h */,
 				4C2D50F8186C3FE100E54244 /* JHViewController.m */,
 				4C2D50FA186C3FE100E54244 /* Images.xcassets */,
@@ -250,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C027979186E5C6500B2FCA5 /* JHPlayerCell.m in Sources */,
 				4C2D50F3186C3FE100E54244 /* JHAppDelegate.m in Sources */,
+				4C027976186DC66700B2FCA5 /* JHPlayer.m in Sources */,
+				4C02797C186E785E00B2FCA5 /* JHPlayerDetailViewController.m in Sources */,
+				4C027973186DC5CB00B2FCA5 /* JHPlayersViewController.m in Sources */,
 				4C2D50F9186C3FE100E54244 /* JHViewController.m in Sources */,
 				4C2D50EF186C3FE100E54244 /* main.m in Sources */,
 			);
@@ -461,6 +485,7 @@
 				4C2D5113186C3FE100E54244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2D5114186C3FE100E54244 /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +494,7 @@
 				4C2D5116186C3FE100E54244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

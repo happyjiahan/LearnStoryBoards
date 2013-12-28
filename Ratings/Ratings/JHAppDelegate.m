@@ -7,12 +7,29 @@
 //
 
 #import "JHAppDelegate.h"
+#import "JHPlayer.h"
+#import "JHPlayersViewController.h"
 
 @implementation JHAppDelegate
+{
+    NSMutableArray *_players;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _players = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        JHPlayer *player = [[JHPlayer alloc] initWithName:@"name" game:@"game" rating:i];
+        [_players addObject:player];
+    }
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    
+    UINavigationController *navController = [tabBarController viewControllers][1];
+    JHPlayersViewController *playersController = (JHPlayersViewController *)[navController viewControllers][0];
+    playersController.players = _players;
+    
+    
     return YES;
 }
 							
